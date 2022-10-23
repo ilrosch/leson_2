@@ -19,6 +19,8 @@ jobs:
     - name: Webpack build
       run: |
         npm install
+        npm install --save-dev babel-cli
+        npm audit fix --force
         npx webpack
         npm run lint:js
         npm run lint:css
