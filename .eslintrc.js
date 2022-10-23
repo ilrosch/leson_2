@@ -13,4 +13,14 @@ module.exports = {
   },
   plugins: ["react"],
   rules: {},
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [
+          ['@ui', './src/ui'],
+          ['@features/', './src/features']
+        ],
+        extensions: ['.ts', '.js', '.jsx', '.tsx']
+      }
+    }
 };
