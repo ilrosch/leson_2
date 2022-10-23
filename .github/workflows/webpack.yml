@@ -21,5 +21,3 @@ jobs:
         npm install
         npm install --save-dev babel-cli
         npx webpack
-        npm run lint:js
-        npm run lint:css
