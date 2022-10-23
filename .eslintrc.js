@@ -14,14 +14,16 @@ module.exports = {
   plugins: ["react"],
   rules: {},
   settings: {
-    'import/resolver': {
+    "import/resolver": {
       alias: {
         map: [
-          ['@ui', './src/ui'],
-          ['@features/', './src/features']
+          ["@ui", "./src/ui"],
+          ["@features/", "./src/features"],
         ],
-        extensions: ['.ts', '.js', '.jsx', '.tsx']
-      }
-    }
+        extensions: [".ts", ".js", ".jsx", ".tsx"],
+      },
+    },
+  },
 };
+
 
